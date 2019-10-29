@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TopTileWidget</class>
+ <widget class="QWidget" name="TopTileWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>957</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="20,80">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="titleWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">#titleWidget{
+	border-image: url(:/picture/image/titlebk.png);
+    background-position: top left;
+    background-repeat: no-repeat
+}
+
+QWidget QPushButton#pushButtonMin{
+	/*background-image: url(:/picture/image/min_button.png);*/ /*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/min_button.png);/*皮肤或背景图片以自动适应控件大小*/
+    background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+QWidget QPushButton#pushButtonMax{
+	/*background-image: url(:/picture/image/max_button.png);*/ /*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/max_button.png);/*皮肤或背景图片以自动适应控件大小*/
+    background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+/*鼠标悬浮时的效果*/
+QWidget QPushButton#pushButtonMax:hover{   
+ border-image: url(:/picture/image/normal_button.png);   
+ background-repeat: no-repeat;
+ border:none;/*无边框*/
+}
+
+QWidget QPushButton#pushButtonClose{
+	/*background-image: url(:/picture/image/close_button.png);*//*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/close_button.png);/*皮肤或背景图片以自动适应控件大小*/
+    background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>498</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButtonMin">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButtonMax">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButtonClose">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="contentWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">.QWidget{
+	background-color: rgb(41, 255, 148);
+}
+
+/*QWidget{
+	background-color: rgb(41, 255, 148);
+}*/</string>
+     </property>
+     <widget class="QLabel" name="label1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>70</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>子控件1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>60</y>
+        <width>521</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>100</y>
+        <width>521</width>
+        <height>81</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>子控件2</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

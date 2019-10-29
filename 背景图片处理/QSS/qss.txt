@@ -1,0 +1,35 @@
+#titleWidget{
+	border-image: url(:/picture/image/titlebk.png);
+        background-position: top left;
+        background-repeat: no-repeat
+}
+
+QWidget QPushButton#pushButtonMin{
+	/*background-image: url(:/picture/image/min_button.png);*/ /*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/min_button.png);/*皮肤或背景图片以自动适应控件大小*/
+        background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+QWidget QPushButton#pushButtonMax{
+	/*background-image: url(:/picture/image/max_button.png);*/ /*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/max_button.png);/*皮肤或背景图片以自动适应控件大小*/
+        background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+/*鼠标悬浮时的效果*/
+QWidget QPushButton#pushButtonMax:hover{   
+ border-image: url(:/picture/image/normal_button.png);   
+ background-repeat: no-repeat;
+ border:none;/*无边框*/
+}
+
+QWidget QPushButton#pushButtonClose{
+	/*background-image: url(:/picture/image/close_button.png);*//*会缩放图片以适应控件的大小*/
+	border-image: url(:/picture/image/close_button.png);/*皮肤或背景图片以自动适应控件大小*/
+        background-repeat: no-repeat;
+ 	border:none;/*无边框*/
+}
+
+
